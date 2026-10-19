@@ -4,18 +4,34 @@ public class Ejercicio3Hilos {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		numero hilo1 = new numero() ;
+		palabra hilo2 = new palabra();
+		
+		hilo1.start();
+		hilo2.start();
 
+		
+		
 	}
-	public static void numeros() {
+
+	
+
+}
+class numero extends Thread{
+	
+	public void run() {
 		for(int i=0;i<10;i++) {
 			System.out.println(i);
 		}
 	}
-	public static void palabras() {
+	
+}
+class palabra extends Thread{
+	public void run() {
 		for(int i=0;i<10;i++) {
-			String letra="";
-			
-			System.out.println(i);
+			String[] letra= {"a","b","c","d","e","f","g","h","i","j"};
+			System.out.println(letra[i]);
 		}
 	}
+	
 }
