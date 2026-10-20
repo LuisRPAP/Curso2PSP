@@ -21,7 +21,7 @@ class numero extends Thread{
 	
 	public void run() {
 		for(int i=0;i<10;i++) {
-			System.out.println(i);
+			System.out.print(i);
 		}
 	}
 	
@@ -30,7 +30,7 @@ class palabra extends Thread{
 	public void run() {
 		for(int i=0;i<10;i++) {
 			String[] letra= {"a","b","c","d","e","f","g","h","i","j"};
-			System.out.println(letra[i]);
+			System.out.print(letra[i]);
 		}
 	}
 	
