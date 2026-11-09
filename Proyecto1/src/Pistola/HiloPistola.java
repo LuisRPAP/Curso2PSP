@@ -7,7 +7,12 @@ public class HiloPistola extends Thread {
 	public  void run()	{
 		
 		
-		p1.disparar();
+		try {
+			p1.disparar();
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		p1.cargar();
 		
 	}

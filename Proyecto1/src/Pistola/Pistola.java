@@ -15,7 +15,6 @@ public class Pistola {
 			System.out.println("Quedan "+i+" disparos en el cargador");
 			wait();
 			
-			
 		}
 		cargador=false;
 		
